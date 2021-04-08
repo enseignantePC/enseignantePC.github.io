@@ -21,17 +21,12 @@ body {
     font-size: 120%;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
     font-size: 200%;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
-h2 {
-    font-size: 150%;
-    color: white;
-    padding-left: 15px;
-}
 
 article {
     color: white;
