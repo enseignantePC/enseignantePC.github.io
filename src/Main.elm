@@ -20,8 +20,8 @@ view x =
       , text "Ce site internet est une plateforme avec plusieurs simulations de physique chimie."
       , h2 [] [text "Niveau 4e"]
       , a [ href "assets/4e/cours/4e.zip" ] [ text "Télécharger le cours"]
-      , li [] [ text "" ]
+      , br [] []
       , a [ href "assets/4e/chimie/godot.html" ] [ text "Équilibrer des équations chimiques"]
-      , li [] [ text "" ]
+      , br [] []
       , a [ href "assets/4e/act1/godot_html.html" ] [ text "Activité 1: Que contient notre univers?"]
     ]
