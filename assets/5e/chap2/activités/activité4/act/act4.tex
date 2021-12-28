@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cleese Assignment (For Students)
+% LaTeX Template
+% Version 2.0 (27/5/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\input{activite.sty} % Include the file specifying the document structure and custom commands
+% \usepackage{activite}
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Required
+\newcommand{\assignmentQuestionName}{Question} % The word to be used as a prefix to question numbers; example alternatives: Problem, Exercise
+\newcommand{\assignmentClass}{Physique Chimie} % Course/class
+\newcommand{\assignmentTitle}{Activité n°4} % Assignment title or name
+\newcommand{\assignmentAuthorName}{Chapitre 2} %
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\newcommand{\titreActivite}{\Huge Activité 4 : Les dangers du court circuit} % titre de l'activité
+\newcommand{\objectif}{ 	
+	
+	\begin{itemize}
+		% \item Bases de la sécurité en électricité.
+		\item Danger et précautions liés à l'électrisation et l'électrocution.
+		\item Tension du secteur.
+	\end{itemize}
+} % titre de l'activité
+\newcommand{\contexte}{
+	% Laeticia raconte ...
+}
+\newcommand{\resumeContexte}{
+	% Saura-tu aider Laeticia à ...
+	} % titre de l'activité
+
+\newcommand{\doctitle}[1]{ 
+\begin{align*}
+	\centering\textbf{\color{DarkBlue} {#1}}
+\end{align*}	
+}
+
+\newcommand{\docOne}{ 
+	\large
+	\doctitle{Document 1 : L'électrisation}
+
+		L'électrisation, souvent confondue avec le terme électrocution, correspond au passage d'un courant
+		électrique dans le corps d'un animal pouvant alors provoquer atteinte aux différents
+		tissus et organes sur son trajet.
+		On peut parler de foudroiement ou de fulguration, au sens large, lorsque l'électrisation est
+		provoquée par un courant de foudre. L'électricité produite par un défibrillateur permet de relancer le cœur.
+		}
+
+\newcommand{\docTwo}{ 
+	\large
+	\doctitle{Document 2 : L'électrocution }  
+		
+	L'électrocution correspond au fait de causer une secousse mortelle par le passage d'un courant
+	électrique chez l'Homme ou chez l'animal. Dans le cas défavorable où le corps est traversé pendant
+	une seconde par un courant alternatif de 75 mA à 50  Hz, une fibrillation ventriculaire peut
+	être causée et létale sauf si une intervention très rapide a lieu sur la victime.
+}
+\newcommand{\docFour}{
+	\large
+	\doctitle{Document 4 : Les cas en France } 
+		
+		Chaque année en France, on dénombre 200 personnes hospitalisés suite à une électrisation, c'est à
+		dire à causes de brûlures électrique ce qui fait un total de 3 à 5 cas par millions d'habitants et par
+		an.
+		Les électrocutions représentent les cas d'accidents de la vie courante les plus rares en France
+		puisqu'on ne dénombrait en 2006 que 61 décès par électrocutions sur un total de 18 000 décès par
+		accidents de la vie courante.
+}
+\newcommand{\docThree}{
+	\large
+	\doctitle{Document 3 : Tensions et intensités}
+
+	Il existe deux types de tensions: 
+	\begin{itemize}
+		\item La tension continue qui est délivrée par les piles.
+		\item La tension alternative qui est délivrée par les prises du secteurs.
+	\end{itemize}
+	La protection contre les chocs électriques (contacts directs ou indirects) n'est pas obligatoire pour
+	des tensions inférieures ou égales à 12 V en courant alternatif et 30 V en courant continu. Au-delà,
+	elle est obligatoire car ça devient dangereux.
+
+	Attention toutefois à ne pas sous-estimer les effets du courant continu : dans un
+	milieu sec, toute tension supérieure à 120 V est considérée comme dangereuse.
+	En alternatif, toujours dans un milieu sec, la tension est considérée comme dangereuse à partir de
+	50 V.
+
+	La tension du secteur (celle des prises de la vie de tout les jours) est alternatives et de 220 Volts.
+	La tension d'une pile est continue et généralement de 3 à 15 Volt.
+}
+
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\date{}
+\title{\titreActivite}
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 1
+%----------------------------------------------------------------------------------------
+
+\underline{\textbf{Objectif}} :  \vspace{2pt}
+\objectif
+
+\vspace{4pt}
+
+% \underline{\textbf{Contexte}} :  \textit{\contexte}
+
+\vspace{-10pt}
+\begin{center}
+	\includegraphics[width=0.25\columnwidth]{activité.jpg.png} % Example image
+\end{center}
+\vspace{-10pt}
+
+\textbf{\resumeContexte}
+\vspace{-12pt}
+%% ----------------------------------
+
+\assignmentSection{Votre mission travail}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+	\questiontext{
+		\textbf{Répondre} aux questions suivantes 
+		à l'aide des \textbf{documents en page 2}:
+	}
+	\end{question}
+
+	\subquestion{
+		\textbf{Expliquer} la différence fondamentale entre
+	une électrisation et une électrocution ?
+	}
+	\answerbox{2}
+
+	\subquestion{
+		Combien y a t-il de mort due à l'électricité 
+		chaque année en France?
+	}
+	\answerbox{2}
+		
+	\subquestion{ Qu'appelle-t-on la tension du secteur ?}
+	\answerbox{2}
+	
+	\subquestion{
+		\textbf{Expliquer} pourquoi est-ce qu'il est dangereux 
+		de mettre les doigts dans une prise mais pas sur les bornes d'une pile?}
+	\answerbox{4}
+	
+% \hspace{-25pt}
+% \begin{minipage}[c]{1\textwidth}
+	% \awesomebox[black]{2pt}{\faBook}{black}{}
+		\begin{minipage}[t]{0.45\textwidth}
+			\docOne
+		\end{minipage}
+		\hspace{10pt}
+		\begin{minipage}[t]{0.45\textwidth}
+			\docTwo
+		\end{minipage}	
+% \end{minipage}
+% \hspace{ 0pt}
+
+\begin{minipage}[t]{0.45\textwidth}
+	\docThree
+\end{minipage}
+\hspace{10pt}
+\begin{minipage}[t]{0.45\textwidth}
+	\docFour 
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1049.9808mm"
+   height="136.65627mm"
+   viewBox="0 0 1049.9808 136.65625"
+   version="1.1"
+   id="svg99"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="diagramme_collegien.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview101"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:lockguides="false"
+     inkscape:zoom="0.23307343"
+     inkscape:cx="2911.0998"
+     inkscape:cy="38.614441"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid201"
+       units="cm"
+       spacingx="10"
+       spacingy="10"
+       originx="166.70805"
+       originy="-32.336354" />
+  </sodipodi:namedview>
+  <defs
+     id="defs96">
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21877" />
+    </marker>
+    <rect
+       x="-226.77165"
+       y="0"
+       width="453.5433"
+       height="113.38583"
+       id="rect11381" />
+    <symbol
+       id="Connector">
+      <title
+         id="title342">Connector</title>
+      <desc
+         id="desc344">Exit to or entry from another part of chart.</desc>
+      <circle
+         cx="19.84375"
+         cy="19.84375"
+         r="5.2916665"
+         style="stroke-width:0.529167"
+         id="circle346" />
+    </symbol>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883-3" />
+    </marker>
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-8" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-2" />
+    <rect
+       x="-226.77165"
+       y="0"
+       width="453.5433"
+       height="113.38583"
+       id="rect11381-3" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-67"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883-6-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-6-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21883-3-2" />
+    </marker>
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-9" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-8-1" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-2-2" />
+    <rect
+       x="-226.77165"
+       y="0"
+       width="453.5433"
+       height="113.38583"
+       id="rect6259" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="415.74802"
+       height="151.18111"
+       id="rect26626-9-8" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="476.10361"
+       height="143.70789"
+       id="rect18340" />
+    <rect
+       x="-226.77165"
+       y="0"
+       width="453.5433"
+       height="113.38583"
+       id="rect30874" />
+    <rect
+       x="-453.5433"
+       y="195.69002"
+       width="476.10361"
+       height="143.70789"
+       id="rect30876" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(166.70804,-32.336379)">
+    <g
+       id="g978"
+       transform="translate(-127.55457)">
+      <g
+         id="g18854"
+         transform="translate(29.568197,16.296592)">
+        <use
+           xlink:href="#Connector"
+           style="fill:#aaccee;stroke:#000000"
+           id="use7160"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           transform="matrix(20.039073,0,0,12.297527,-355.02992,-159.66113)" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.34572217,0,0,0.34572217,79.743027,77.288047)"
+           id="text11379"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect11381);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-226.77148"
+             y="35.390625"
+             id="tspan34522"><tspan
+               style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+               id="tspan34520">Nourriture</tspan></tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-6)"
+         d="M 196.33389,100.00002 H 297.55458"
+         id="path21815-9"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g6257"
+         transform="translate(373.74419,16.296592)">
+        <use
+           xlink:href="#Connector"
+           style="fill:#aaccee;stroke:#000000"
+           id="use6249"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           transform="matrix(20.039073,0,0,12.297527,-355.02992,-159.66113)" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.34572217,0,0,0.34572217,89.944117,77.288047)"
+           id="text6255"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect6259);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-226.77148"
+             y="35.390625"
+             id="tspan34526"><tspan
+               style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+               id="tspan34524">Muscles</tspan></tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-6)"
+         d="M 535.12728,100.00002 H 636.34797"
+         id="path18334"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g30866"
+         transform="translate(740.75152,16.296592)">
+        <use
+           xlink:href="#Connector"
+           style="fill:#aaccee;stroke:#000000"
+           id="use30860"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           transform="matrix(20.039073,0,0,12.297527,-355.02992,-159.66113)" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.34572217,0,0,0.34572217,89.944117,77.288047)"
+           id="text30864"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect30874);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-226.77148"
+             y="35.390625"
+             id="tspan34530"><tspan
+               style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+               id="tspan34528">Dynamo</tspan></tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-6)"
+         d="M 902.13461,100.00002 H 1003.3553"
+         id="path30868"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,185.23754,20.200994)"
+       id="text26624-2-7"
+       style="font-style:normal;font-weight:normal;font-size:46.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26626-9-8);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-453.54297"
+         y="236.97854"
+         id="tspan34532">Énergie chimique</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,524.03093,20.200994)"
+       id="text18338"
+       style="font-style:normal;font-weight:normal;font-size:46.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect18340);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-453.54297"
+         y="236.97854"
+         id="tspan34534">Énergie mécanique</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,891.03826,20.200994)"
+       id="text30872"
+       style="font-style:normal;font-weight:normal;font-size:46.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect30876);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-453.54297"
+         y="236.97854"
+         id="tspan34536">Énergie électrique</tspan></text>
+  </g>
+</svg>

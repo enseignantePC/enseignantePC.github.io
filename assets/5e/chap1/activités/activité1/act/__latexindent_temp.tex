@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cleese Assignment (For Students)
+% LaTeX Template
+% Version 2.0 (27/5/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+
+% \usepackage{activite} % Include the file specifying the document structure and custom commands
+\input{/home/astrale/Cours/EDUCATION_NATIONALE/mes_cours/2121-22/templates/activité/act/activite.sty} % Include the file specifying the document structure and custom commands
+
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Required
+\newcommand{\assignmentQuestionName}{Question} % The word to be used as a prefix to question numbers; example alternatives: Problem, Exercise
+\newcommand{\assignmentClass}{Physique Chimie} % Course/class
+\newcommand{\assignmentTitle}{Activité n°1} % Assignment title or name
+\newcommand{\assignmentAuthorName}{Chapitre 1} %
+
+% Optional (comment lines to remove)
+% \newcommand{\assignmentClassInstructor}{Jones 10:30am} % Intructor name/time/description
+% \newcommand{\assignmentDueDate}{Monday,\ January\ 24,\ 2019} % Due date
+
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\newcommand{\titreActivite}{Activité 1 : Perdus dans le noir} % titre de l'activité
+\newcommand{\objectif}{ 	
+	
+	\begin{itemize}
+		\item Introduire et définir les termes dipôle, générateur, récepteur, circuit électrique.
+		\item Réaliser un circuit électrique simple.
+	\end{itemize}
+} % titre de l'activité
+\newcommand{\contexte}{ 
+	Bertrand et Nina sont partis se ballader en fôret avec leur classe de 5e,
+	ils se sont perdus et voilà plusieurs heures qu'ils essaient de retrouver 
+	leur chemin pendant que la nuit tombe.
+	Il leur est désormais impossible d'avancer sans lumière et Bertrand commence à avoir peur... 
+	Nina propose de fabriquer une lampe torche avec le matériel qu'ils ont
+	dans leur sac à dos.
+ }
+\newcommand{\resumeContexte}{Saurez vous aidez Nina et Bertrand à passez la nuit?} % titre de l'activité
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\date{}
+\title{\titreActivite}
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 1
+%----------------------------------------------------------------------------------------
+
+\underline{\textbf{Objectif}} :  \vspace{2pt}
+\objectif
+
+\vspace{8pt}
+
+\underline{\textbf{Contexte}} :  \textit{\contexte}
+
+\begin{center}
+	\includegraphics[width=0.45\columnwidth]{activité.jpg} % Example image
+\end{center}
+
+\textbf{\resumeContexte}
+\vspace{-12pt}
+%% ----------------------------------
+
+\assignmentSection{Votre mission travail}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 2
+%----------------------------------------------------------------------------------------
+\begin{question}
+
+\questiontext{Par binôme, \textbf{réaliser} un circuit électrique
+pour allumer l’ampoule.
+Vous disposez d’une pile cylindrique, d’un fil et d’une ampoule...
+}
+\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 2
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+
+\questiontext{Sur votre cahier, sur la page suivante:}
+
+%--------------------------------------------
+
+\begin{subquestion}{
+	\textbf{Dessinez précisement} tous les circuits possibles où la lampe s’allume.
+	Il faut pouvoir distinguer les différentes parties de l'ampoule. 
+	} % Subquestion within question
+
+\end{subquestion}
+
+%--------------------------------------------
+
+\begin{subquestion}{
+	Même travail mais avec une pile plate (qu'il faut aller chercher) 
+	qui remplace la pile cylindrique.
+	} 
+% \answerbox{4}
+\end{subquestion}
+
+\begin{subquestion}{
+	\textbf{Dessinez} une ampoule avec le filament à l’intérieur de l’ampoule.
+	} 
+% \answerbox{4}
+\end{subquestion}
+Vous venez de réaliser un circuit électrique pour allumer la lampe !
+\begin{subquestion}{
+	Quelles sont les conditions pour que la lampe s’allume, autrement dit,
+	comment définiriez vous un circuit électrique ?	
+	} 
+\answerbox{4}
+
+\end{subquestion}
+
+\end{question}
+\end{document}

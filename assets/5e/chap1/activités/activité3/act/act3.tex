@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cleese Assignment (For Students)
+% LaTeX Template
+% Version 2.0 (27/5/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\input{/home/astrale/Cours/EDUCATION_NATIONALE/mes_cours/2121-22/templates/activité/act/activite.sty} % Include the file specifying the document structure and custom commands
+
+% \input{structure.tex} % Include the file specifying the document structure and custom commands
+
+\hypersetup{%
+  colorlinks=false,% hyperlinks will be black
+  linkbordercolor=red,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Required
+\newcommand{\assignmentQuestionName}{Question} % The word to be used as a prefix to question numbers; example alternatives: Problem, Exercise
+\newcommand{\assignmentClass}{Physique Chimie} % Course/class
+\newcommand{\assignmentTitle}{Activité n°3} % Assignment title or name
+\newcommand{\assignmentAuthorName}{Chapitre 1} %
+
+% Optional (comment lines to remove)
+% \newcommand{\assignmentClassInstructor}{Jones 10:30am} % Intructor name/time/description
+% \newcommand{\assignmentDueDate}{Monday,\ January\ 24,\ 2019} % Due date
+
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\newcommand{\titreActivite}{\huge Activité 3 : schématiser des circuits électrique.} % titre de l'activité
+\newcommand{\objectif}{ 	
+	
+	\begin{itemize}
+		\item Apprendre à représenter les 
+		circuits électriques de manière simple et compréhensible.
+	\end{itemize}
+} % titre de l'activité
+\newcommand{\contexte}{ 
+	Après s'être dépêtré de leurs ennuis, Nina et Bertrand sont rentrés chez eux pour retourner à leur vie banale et sans saveur.
+	Ils décident de continuer de parler de circuit électriques par mail, seulement voilà, Bertrand n'est pas très bon en dessin
+	et il a peur que le circuit qu'il veut envoyer à Nina soit incompréhensible.
+ }
+\newcommand{\resumeContexte}{Saurez vous aidez Bertrand et Nina à communiquer sur les circuits électriques?} % titre de l'activité
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\date{}
+\title{\titreActivite}
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 1
+%----------------------------------------------------------------------------------------
+
+\underline{\textbf{Objectif}} :  \vspace{2pt}
+\objectif
+
+\vspace{8pt}
+
+\underline{\textbf{Contexte}} :  \textit{\contexte}
+
+\begin{center}
+	\includegraphics[width=0.35\columnwidth]{activité.png} % Example image
+\end{center}
+
+\textbf{\resumeContexte}
+\vspace{-12pt}
+%% ----------------------------------
+
+\assignmentSection{Votre mission travail}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 1
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+	\questiontext{
+		Le tableau ci dessous contient des éléments qui peuvent apparaître dans un montage électrique.
+	}
+
+	\subquestion{\textbf{Compléter} le tableau si vous pensez qu'il manque un ou des éléments.}
+
+	\subquestion{\textbf{Cochez la case} si vous pensez qu'il est absolument nécessaire de dessiner l'élément.}
+
+
+
+		% \setlength{\arrayrulewidth}{0.5mm}
+		% \setlength{	abcolsep}{18pt}
+		%\renewcommand{\arraystretch}{1.5}
+		\begin{center}
+			
+		\begin{tabular}{ |p{8cm}|p{8cm}|  }
+			\hline
+			 		&	À cocher s'il est nécessaire de dessiner \\
+			\hline\hline
+			Les pinces crocodiles 					&		 	\\\hline
+			La pile				 					&		 	\\\hline
+			La forme de la pile	 					&		 	\\\hline
+			Ce qui est écrit sur la pile	 		&		 	\\\hline
+			La lampe						 		&		 	\\\hline
+			Le support de la lampe			 		&		 	\\\hline
+			Les fils						 		&		 	\\\hline
+			La couleur des fils						&		 	\\\hline
+			La longueur des fils					&		 	\\\hline
+			La forme prise par les fils				&		 	\\\hline
+			L’interrupteur							&		 	\\\hline
+													&		 	\\\hline
+													&		 	\\\hline
+			\end{tabular}
+		\end{center}
+	\end{question}
+
+%----------------------------------------------------------------------------------------
+%	QUESTION 2
+%----------------------------------------------------------------------------------------
+
+\begin{question}
+	\questiontext{
+		Regarde la vidéo suivante : \url{https://www.youtube.com/watch?v=0X_1Ih71nF0}
+		puis reproduis les symboles normalisés 
+		des différents dipôles sur le tableau en page 2.
+		} 
+\end{question}
+\vspace{-5pt}
+
+\begin{question}
+	\questiontext{
+		Visionner la vidéo suivante \url{https://www.youtube.com/watch?v=B3Z-vug8rFE}
+	}
+
+
+\end{question}
+		\renewcommand{\arraystretch}{4.75}
+
+		\begin{center}
+		\begin{tabular}{ |p{6cm}|p{6cm}|p{6cm}|  }
+			\hline
+			Dipôle 						& Dessin & Symbole normalisé \\\hline\hline
+			Pile 						& 
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=2.5cm]{pile.jpg}
+				\end{center}
+			  \end{minipage} &  \\\hline
+
+			Générateur 						& 
+			\begin{minipage}{.2\textwidth}
+				% \hspace{20pt}
+				\begin{center}
+					\includegraphics[width=2.5cm]{générateur.jpg}
+				\end{center}
+			\end{minipage} &  \\\hline
+
+			Lampe 	&
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=1cm]{lampe.jpg}
+				\end{center}
+			  \end{minipage} &  \\\hline
+
+			Moteur	& 
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=2cm]{moteur.jpg}
+				\end{center}
+			  \end{minipage}  &  \\\hline
+
+			Résistance 					&  
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=2cm]{resistance.jpg}
+				\end{center}
+			\end{minipage}  &  \\\hline
+
+
+			Diode 						&  
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=2cm]{diode.jpg}
+				\end{center}
+			  \end{minipage}  &  \\\hline
+
+			DEL (Diode électroluminescente) 	&  
+			\begin{minipage}{.3\textwidth}
+				\begin{center}
+					\includegraphics[width=2cm]{DEL.jpg}
+				\end{center}
+			  \end{minipage}  &  \\\hline
+
+			
+			  Interrupteur ouvert 		&
+			  \begin{minipage}{.3\textwidth}
+				  \begin{center}
+					  \includegraphics[width=2cm]{interrupteur_ouvert.jpg}
+				  \end{center}
+				\end{minipage}  &  \\\hline
+				
+			  Interrupteur fermé 			&  
+			  \begin{minipage}{.3\textwidth}
+				  \begin{center}
+					  \includegraphics[width=2cm]{interrupteur_fermé.jpg}
+				  \end{center}
+				\end{minipage}  &  \\\hline
+  
+
+
+
+			\end{tabular}
+		\end{center}
+
+\end{document}
