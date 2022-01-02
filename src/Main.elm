@@ -1,5 +1,6 @@
 module Main exposing (..)
 
+import Dict exposing (..)
 import Element exposing (download, el, link, none, text)
 import Element.Background
 import Element.Font
@@ -19,17 +20,17 @@ main =
             , el [ Element.Font.size 30 ] (text "6e")
             , el [ Element.Font.size 25 ] (text "chapitre 1")
             , make_ref_list chap1_6e activite6echap1
-                |> view_ref_list_simple
+                |> view_ref_tuple_simple
             , el [ Element.Font.size 25 ] (text "chapitre 2")
             , make_ref_list chap2_6e activite6echap2
-                |> view_ref_list_simple
+                |> view_ref_tuple_simple
             , el [ Element.Font.size 30 ] (text "5e")
             , el [ Element.Font.size 25 ] (text "chapitre 1")
             , make_ref_list chap1_5e activite5echap1
-                |> view_ref_list_simple
+                |> view_ref_tuple_simple
             , el [ Element.Font.size 25 ] (text "chapitre 2")
             , make_ref_list chap2_5e activite5echap2
-                |> view_ref_list_simple
+                |> view_ref_tuple_simple
             ]
         )
 
@@ -54,49 +55,44 @@ chap2_6e =
     "./assets/6e/chap2/activités/"
 
 
-activite5echap1 : List String
 activite5echap1 =
-    [ "activité1/act1.pdf"
-    , "activité2/act2.pdf"
-    , "activité3/act3.pdf"
-    , "activité4/act4.pdf"
-    , "activité5/act5.pdf"
+    [ ( "activité 1", "activité1/act1.pdf" )
+    , ( "activité 2", "activité2/act2.pdf" )
+    , ( "activité 3", "activité3/act3.pdf" )
+    , ( "activité 4", "activité4/act4.pdf" )
+    , ( "activité 5", "activité5/act5.pdf" )
     ]
 
 
-activite5echap2 : List String
 activite5echap2 =
-    [ "activité1/act1.pdf"
-    , "activité2/act2.pdf"
-    , "activité3/act3.pdf"
-    , "activité4/act4.pdf"
-    , "tache_complexe/tache_complexe.pdf"
+    [ ( "activité 1", "activité1/act1.pdf" )
+    , ( "activité 2", "activité2/act2.pdf" )
+    , ( "activité 3", "activité3/act3.pdf" )
+    , ( "activité 4", "activité4/act4.pdf" )
+    , ( "tache complexe", "tache_complexe/tache_complexe.pdf" )
     ]
 
 
-activite6echap1 : List String
 activite6echap1 =
-    [ "activité1/act1.pdf"
-    , "activité2/act2.pdf"
-    , "activité3/act3.pdf"
-    , "activité4/act4.pdf"
+    [ ( "activité 1", "activité1/act1.pdf" )
+    , ( "activité 2", "activité2/act2.pdf" )
+    , ( "activité 3", "activité3/act3.pdf" )
+    , ( "activité 4", "activité4/act4.pdf" )
     ]
 
 
-activite6echap2 : List String
 activite6echap2 =
-    [ "activité1/act1.pdf"
-    , "activité2/act2.pdf"
-    , "activité3/act3.pdf"
+    [ ( "activité 1", "activité1/act1.pdf" )
+    , ( "activité 2", "activité2/act2.pdf" )
+    , ( "activité 3", "activité3/act3.pdf" )
     ]
 
 
-add_prefix : String -> String -> String
+add_prefix : String -> ( String, String ) -> ( String, String )
 add_prefix prefix cont =
-    prefix ++ cont
+    ( Tuple.first cont, prefix ++ Tuple.second cont )
 
 
-make_ref_list : String -> List String -> List String
 make_ref_list chapitre activites =
     activites
         |> List.map (add_prefix chapitre)
@@ -110,11 +106,24 @@ view_ref_list_simple list =
     List.map string_to_link list |> Element.column [ Element.padding 10 ]
 
 
+view_ref_tuple_simple : List ( String, String ) -> Element.Element msg
+view_ref_tuple_simple list =
+    List.map tuple_to_link list |> Element.column [ Element.padding 10 ]
+
+
 string_to_link : String -> Element.Element msg
 string_to_link str =
     download [ Element.Font.color (Element.rgb 0.1 0.1 1) ]
         { url = str
         , label = text str
+        }
+
+
+tuple_to_link : ( String, String ) -> Element.Element msg
+tuple_to_link tuple =
+    download [ Element.Font.color (Element.rgb 0.1 0.1 1) ]
+        { url = Tuple.second tuple
+        , label = text (Tuple.first tuple)
         }
 
 
@@ -124,4 +133,4 @@ string_to_link str =
 
 content =
     make_ref_list chap1_5e activite5echap1
-        |> view_ref_list_simple
+        |> view_ref_tuple_simple

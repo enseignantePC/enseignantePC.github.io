@@ -4456,13 +4456,34 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 	}
 };
 var $author$project$Main$activite5echap1 = _List_fromArray(
-	['activité1/act1.pdf', 'activité2/act2.pdf', 'activité3/act3.pdf', 'activité4/act4.pdf', 'activité5/act5.pdf']);
+	[
+		_Utils_Tuple2('activité 1', 'activité1/act1.pdf'),
+		_Utils_Tuple2('activité 2', 'activité2/act2.pdf'),
+		_Utils_Tuple2('activité 3', 'activité3/act3.pdf'),
+		_Utils_Tuple2('activité 4', 'activité4/act4.pdf'),
+		_Utils_Tuple2('activité 5', 'activité5/act5.pdf')
+	]);
 var $author$project$Main$activite5echap2 = _List_fromArray(
-	['activité1/act1.pdf', 'activité2/act2.pdf', 'activité3/act3.pdf', 'activité4/act4.pdf', 'tache_complexe/tache_complexe.pdf']);
+	[
+		_Utils_Tuple2('activité 1', 'activité1/act1.pdf'),
+		_Utils_Tuple2('activité 2', 'activité2/act2.pdf'),
+		_Utils_Tuple2('activité 3', 'activité3/act3.pdf'),
+		_Utils_Tuple2('activité 4', 'activité4/act4.pdf'),
+		_Utils_Tuple2('tache complexe', 'tache_complexe/tache_complexe.pdf')
+	]);
 var $author$project$Main$activite6echap1 = _List_fromArray(
-	['activité1/act1.pdf', 'activité2/act2.pdf', 'activité3/act3.pdf', 'activité4/act4.pdf']);
+	[
+		_Utils_Tuple2('activité 1', 'activité1/act1.pdf'),
+		_Utils_Tuple2('activité 2', 'activité2/act2.pdf'),
+		_Utils_Tuple2('activité 3', 'activité3/act3.pdf'),
+		_Utils_Tuple2('activité 4', 'activité4/act4.pdf')
+	]);
 var $author$project$Main$activite6echap2 = _List_fromArray(
-	['activité1/act1.pdf', 'activité2/act2.pdf', 'activité3/act3.pdf']);
+	[
+		_Utils_Tuple2('activité 1', 'activité1/act1.pdf'),
+		_Utils_Tuple2('activité 2', 'activité2/act2.pdf'),
+		_Utils_Tuple2('activité 3', 'activité3/act3.pdf')
+	]);
 var $author$project$Main$chap1_5e = './assets/5e/chap1/activités/';
 var $author$project$Main$chap1_6e = './assets/6e/chap1/activités/';
 var $author$project$Main$chap2_5e = './assets/5e/chap2/activités/';
@@ -10492,7 +10513,9 @@ var $mdgriffith$elm_ui$Element$layout = $mdgriffith$elm_ui$Element$layoutWith(
 	{options: _List_Nil});
 var $author$project$Main$add_prefix = F2(
 	function (prefix, cont) {
-		return _Utils_ap(prefix, cont);
+		return _Utils_Tuple2(
+			cont.a,
+			_Utils_ap(prefix, cont.b));
 	});
 var $author$project$Main$make_ref_list = F2(
 	function (chapitre, activites) {
@@ -10589,7 +10612,7 @@ var $mdgriffith$elm_ui$Element$download = F2(
 				_List_fromArray(
 					[label])));
 	});
-var $author$project$Main$string_to_link = function (str) {
+var $author$project$Main$tuple_to_link = function (tuple) {
 	return A2(
 		$mdgriffith$elm_ui$Element$download,
 		_List_fromArray(
@@ -10598,18 +10621,18 @@ var $author$project$Main$string_to_link = function (str) {
 				A3($mdgriffith$elm_ui$Element$rgb, 0.1, 0.1, 1))
 			]),
 		{
-			label: $mdgriffith$elm_ui$Element$text(str),
-			url: str
+			label: $mdgriffith$elm_ui$Element$text(tuple.a),
+			url: tuple.b
 		});
 };
-var $author$project$Main$view_ref_list_simple = function (list) {
+var $author$project$Main$view_ref_tuple_simple = function (list) {
 	return A2(
 		$mdgriffith$elm_ui$Element$column,
 		_List_fromArray(
 			[
 				$mdgriffith$elm_ui$Element$padding(10)
 			]),
-		A2($elm$core$List$map, $author$project$Main$string_to_link, list));
+		A2($elm$core$List$map, $author$project$Main$tuple_to_link, list));
 };
 var $author$project$Main$main = A2(
 	$mdgriffith$elm_ui$Element$layout,
@@ -10654,7 +10677,7 @@ var $author$project$Main$main = A2(
 						$mdgriffith$elm_ui$Element$Font$size(25)
 					]),
 				$mdgriffith$elm_ui$Element$text('chapitre 1')),
-				$author$project$Main$view_ref_list_simple(
+				$author$project$Main$view_ref_tuple_simple(
 				A2($author$project$Main$make_ref_list, $author$project$Main$chap1_6e, $author$project$Main$activite6echap1)),
 				A2(
 				$mdgriffith$elm_ui$Element$el,
@@ -10663,7 +10686,7 @@ var $author$project$Main$main = A2(
 						$mdgriffith$elm_ui$Element$Font$size(25)
 					]),
 				$mdgriffith$elm_ui$Element$text('chapitre 2')),
-				$author$project$Main$view_ref_list_simple(
+				$author$project$Main$view_ref_tuple_simple(
 				A2($author$project$Main$make_ref_list, $author$project$Main$chap2_6e, $author$project$Main$activite6echap2)),
 				A2(
 				$mdgriffith$elm_ui$Element$el,
@@ -10679,7 +10702,7 @@ var $author$project$Main$main = A2(
 						$mdgriffith$elm_ui$Element$Font$size(25)
 					]),
 				$mdgriffith$elm_ui$Element$text('chapitre 1')),
-				$author$project$Main$view_ref_list_simple(
+				$author$project$Main$view_ref_tuple_simple(
 				A2($author$project$Main$make_ref_list, $author$project$Main$chap1_5e, $author$project$Main$activite5echap1)),
 				A2(
 				$mdgriffith$elm_ui$Element$el,
@@ -10688,7 +10711,7 @@ var $author$project$Main$main = A2(
 						$mdgriffith$elm_ui$Element$Font$size(25)
 					]),
 				$mdgriffith$elm_ui$Element$text('chapitre 2')),
-				$author$project$Main$view_ref_list_simple(
+				$author$project$Main$view_ref_tuple_simple(
 				A2($author$project$Main$make_ref_list, $author$project$Main$chap2_5e, $author$project$Main$activite5echap2))
 			])));
 _Platform_export({'Main':{'init':_VirtualDom_init($author$project$Main$main)(0)(0)}});}(this));
