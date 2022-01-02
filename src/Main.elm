@@ -9,7 +9,7 @@ import Element.Font
 main =
     Element.layout [ Element.Background.color (Element.rgb 0.8 0.8 0.8) ]
         (Element.column
-            [ Element.padding 20 ]
+            [ Element.padding 20, Element.width Element.shrink ]
             [ el [ Element.Font.size 20 ]
                 (text
                     ("Bienvenue sur le site de physique chimie, vous pouvez y télécharger "
@@ -17,20 +17,52 @@ main =
                     )
                 )
             , el [ Element.padding 10 ] none
-            , el [ Element.Font.size 30 ] (text "6e")
-            , el [ Element.Font.size 25 ] (text "chapitre 1")
-            , make_ref_list chap1_6e activite6echap1
-                |> view_ref_tuple_simple
-            , el [ Element.Font.size 25 ] (text "chapitre 2")
-            , make_ref_list chap2_6e activite6echap2
-                |> view_ref_tuple_simple
-            , el [ Element.Font.size 30 ] (text "5e")
-            , el [ Element.Font.size 25 ] (text "chapitre 1")
-            , make_ref_list chap1_5e activite5echap1
-                |> view_ref_tuple_simple
-            , el [ Element.Font.size 25 ] (text "chapitre 2")
-            , make_ref_list chap2_5e activite5echap2
-                |> view_ref_tuple_simple
+            , Element.row [ Element.spacing 50 ]
+                [ Element.column [ Element.alignTop ]
+                    [ --  el [ Element.padding 10 ] none,
+                      el
+                        [ Element.Font.size 30
+                        , Element.centerX
+                        ]
+                        (text "6e")
+                    , el
+                        [ Element.Font.size 25
+                        , Element.centerX
+                        ]
+                        (text "chapitre 1")
+                    , make_ref_list chap1_6e activite6echap1
+                        |> view_ref_tuple_simple
+                    , el
+                        [ Element.Font.size 25
+                        , Element.centerX
+                        ]
+                        (text "chapitre 2")
+                    , make_ref_list chap2_6e activite6echap2
+                        |> view_ref_tuple_simple
+                    ]
+                , Element.column [ Element.alignTop ]
+                    [ -- el [ Element.padding 10 ] none,
+                      el
+                        [ Element.Font.size 30
+                        , Element.centerX
+                        ]
+                        (text "5e")
+                    , el
+                        [ Element.Font.size 25
+                        , Element.centerX
+                        ]
+                        (text "chapitre 1")
+                    , make_ref_list chap1_5e activite5echap1
+                        |> view_ref_tuple_simple
+                    , el
+                        [ Element.Font.size 25
+                        , Element.centerX
+                        ]
+                        (text "chapitre 2")
+                    , make_ref_list chap2_5e activite5echap2
+                        |> view_ref_tuple_simple
+                    ]
+                ]
             ]
         )
 
