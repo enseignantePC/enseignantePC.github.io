@@ -35,11 +35,7 @@ main =
                         , Element.centerX
                         ]
                         (text "6e")
-                    , el
-                        [ Element.Font.size 25
-                        , Element.centerX
-                        ]
-                        (text "chapitre 1")
+                    , chap "chapitre 1"
                     , view_ref_tuple_simple a6eChap1
                     , el
                         [ Element.Font.size 25
@@ -71,6 +67,13 @@ main =
                 ]
             ]
         )
+
+chap x = 
+    el
+        [ Element.Font.size 25
+        , Element.centerX
+        ]
+        (text x)
 
 title x =
     el [ Element.Font.size 40, Element.centerX ]
