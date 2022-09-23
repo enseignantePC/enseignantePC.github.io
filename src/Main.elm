@@ -13,11 +13,20 @@ main =
             [ Element.padding 20, Element.width Element.shrink ]
             [ el [ Element.Font.size 20 ]
                 (text
-                    ("Bienvenue sur le site de physique chimie, vous pouvez y télécharger "
-                        ++ "les activités faites en classe (et autre contenu dans un futur proche (ou lointain))."
-                    )
+                    ("Site ressource physique chimie")
                 )
             , el [ Element.padding 10 ] none
+            , title "2022-23"
+            , Element.row [ Element.spacing 50 ]
+                [ Element.column [ Element.alignTop ]
+                    [ --  el [ Element.padding 10 ] none,
+                      el
+                        [ Element.Font.size 30
+                        , Element.centerX
+                        ]
+                        (text "STI2D")
+                    ]]
+            , title "2021-22"
             , Element.row [ Element.spacing 50 ]
                 [ Element.column [ Element.alignTop ]
                     [ --  el [ Element.padding 10 ] none,
@@ -63,6 +72,11 @@ main =
             ]
         )
 
+title x =
+    el [ Element.Font.size 40, Element.centerX ]
+                (text
+                    (x)
+                )
 
 view_ref_tuple_simple : List ( String, String ) -> Element.Element msg
 view_ref_tuple_simple list =
