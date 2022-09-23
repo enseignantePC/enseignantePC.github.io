@@ -37,11 +37,7 @@ main =
                         (text "6e")
                     , chap "chapitre 1"
                     , view_ref_tuple_simple a6eChap1
-                    , el
-                        [ Element.Font.size 25
-                        , Element.centerX
-                        ]
-                        (text "chapitre 2")
+                    , chap "chapitre 2"
                     , view_ref_tuple_simple a6eChap2
                     ]
                 , Element.column [ Element.alignTop ]
@@ -51,17 +47,9 @@ main =
                         , Element.centerX
                         ]
                         (text "5e")
-                    , el
-                        [ Element.Font.size 25
-                        , Element.centerX
-                        ]
-                        (text "chapitre 1")
+                    , chap "chapitre 1"
                     , view_ref_tuple_simple a5eChap1
-                    , el
-                        [ Element.Font.size 25
-                        , Element.centerX
-                        ]
-                        (text "chapitre 2")
+                    , chap "chapitre 2"
                     , view_ref_tuple_simple a5eChap2
                     ]
                 ]
