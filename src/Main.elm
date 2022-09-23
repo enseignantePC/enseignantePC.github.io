@@ -17,15 +17,7 @@ main =
                 )
             , el [ Element.padding 10 ] none
             , title "2022-23"
-            , Element.row [ Element.spacing 50 ]
-                [ Element.column [ Element.alignTop ]
-                    [ --  el [ Element.padding 10 ] none,
-                      el
-                        [ Element.Font.size 30
-                        , Element.centerX
-                        ]
-                        (text "STI2D")
-                    ]]
+            , myrow "STI2D"
             , title "2021-22"
             , Element.row [ Element.spacing 50 ]
                 [ Element.column [ Element.alignTop ]
@@ -55,6 +47,17 @@ main =
                 ]
             ]
         )
+
+myrow x =
+    Element.row [ Element.spacing 50 ]
+                [ Element.column [ Element.alignTop ]
+                    [ --  el [ Element.padding 10 ] none,
+                      el
+                        [ Element.Font.size 30
+                        , Element.centerX
+                        ]
+                        (text x)
+                    ]]
 
 chap x = 
     el
