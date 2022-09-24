@@ -50,6 +50,19 @@ a20221Gen =
     ]
 
 
+a20221STI2D = [
+( "Remise à niveau", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
+, ( "", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1/act1.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1/methode/Fiche_M_thode_n_1___le_voltm_tre___4_me.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1/methode/méthode.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1/méthode.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1_methodes.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act1/methode/utilisation-amperemetre.pdf" )
+    , ( "", "assets/2022/1ereSTi2D/chap2/act_cours.pdf" )
+]
+
+
 big_list =
     [ ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
     , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )
