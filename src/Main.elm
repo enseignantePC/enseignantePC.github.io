@@ -40,24 +40,24 @@ main =
                     , view_ref_tuple_simple a20221Genchap1
                     ]
                 ]
-            , title "2021-22"
-            , el [ Element.padding 10 ] none
-            , myrow
-                [ mycol
-                    [ minititle "6e"
-                    , chap "chapitre 1"
-                    , view_ref_tuple_simple a6eChap1
-                    , chap "chapitre 2"
-                    , view_ref_tuple_simple a6eChap2
-                    ]
-                , mycol
-                    [ minititle "5e"
-                    , chap "chapitre 1"
-                    , view_ref_tuple_simple a5eChap1
-                    , chap "chapitre 2"
-                    , view_ref_tuple_simple a5eChap2
-                    ]
-                ]
+--            , title "2021-22"
+--            , el [ Element.padding 10 ] none
+--            , myrow
+--                [ mycol
+--                    [ minititle "6e"
+--                    , chap "chapitre 1"
+--                    , view_ref_tuple_simple a6eChap1
+--                    , chap "chapitre 2"
+--                    , view_ref_tuple_simple a6eChap2
+--                    ]
+--                , mycol
+--                    [ minititle "5e"
+--                    , chap "chapitre 1"
+--                    , view_ref_tuple_simple a5eChap1
+--                    , chap "chapitre 2"
+--                    , view_ref_tuple_simple a5eChap2
+--                    ]
+--                ]
             ]
         )
 
