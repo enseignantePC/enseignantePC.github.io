@@ -4488,11 +4488,6 @@ var $author$project$Assets$a6eChap2 = _List_fromArray(
 	[
 		_Utils_Tuple2('activité 1 ', './assets/6e/chapitre2_La_Matiere/activités/activité1/act1.pdf')
 	]);
-var $mdgriffith$elm_ui$Internal$Model$AlignY = function (a) {
-	return {$: 'AlignY', a: a};
-};
-var $mdgriffith$elm_ui$Internal$Model$Top = {$: 'Top'};
-var $mdgriffith$elm_ui$Element$alignTop = $mdgriffith$elm_ui$Internal$Model$AlignY($mdgriffith$elm_ui$Internal$Model$Top);
 var $mdgriffith$elm_ui$Internal$Model$AlignX = function (a) {
 	return {$: 'AlignX', a: a};
 };
@@ -10543,30 +10538,28 @@ var $mdgriffith$elm_ui$Element$layoutWith = F3(
 	});
 var $mdgriffith$elm_ui$Element$layout = $mdgriffith$elm_ui$Element$layoutWith(
 	{options: _List_Nil});
-var $mdgriffith$elm_ui$Internal$Model$Empty = {$: 'Empty'};
-var $mdgriffith$elm_ui$Element$none = $mdgriffith$elm_ui$Internal$Model$Empty;
-var $mdgriffith$elm_ui$Internal$Model$PaddingStyle = F5(
-	function (a, b, c, d, e) {
-		return {$: 'PaddingStyle', a: a, b: b, c: c, d: d, e: e};
-	});
-var $mdgriffith$elm_ui$Internal$Flag$padding = $mdgriffith$elm_ui$Internal$Flag$flag(2);
-var $mdgriffith$elm_ui$Element$padding = function (x) {
-	var f = x;
+var $author$project$Main$minititle = function (x) {
 	return A2(
-		$mdgriffith$elm_ui$Internal$Model$StyleClass,
-		$mdgriffith$elm_ui$Internal$Flag$padding,
-		A5(
-			$mdgriffith$elm_ui$Internal$Model$PaddingStyle,
-			'p-' + $elm$core$String$fromInt(x),
-			f,
-			f,
-			f,
-			f));
+		$mdgriffith$elm_ui$Element$el,
+		_List_fromArray(
+			[
+				$mdgriffith$elm_ui$Element$Font$size(30),
+				$mdgriffith$elm_ui$Element$centerX
+			]),
+		$mdgriffith$elm_ui$Element$text(x));
 };
-var $mdgriffith$elm_ui$Element$rgb = F3(
-	function (r, g, b) {
-		return A4($mdgriffith$elm_ui$Internal$Model$Rgba, r, g, b, 1);
-	});
+var $mdgriffith$elm_ui$Internal$Model$AlignY = function (a) {
+	return {$: 'AlignY', a: a};
+};
+var $mdgriffith$elm_ui$Internal$Model$Top = {$: 'Top'};
+var $mdgriffith$elm_ui$Element$alignTop = $mdgriffith$elm_ui$Internal$Model$AlignY($mdgriffith$elm_ui$Internal$Model$Top);
+var $author$project$Main$mycol = function (x) {
+	return A2(
+		$mdgriffith$elm_ui$Element$column,
+		_List_fromArray(
+			[$mdgriffith$elm_ui$Element$alignTop]),
+		x);
+};
 var $mdgriffith$elm_ui$Internal$Model$AsRow = {$: 'AsRow'};
 var $mdgriffith$elm_ui$Internal$Model$asRow = $mdgriffith$elm_ui$Internal$Model$AsRow;
 var $mdgriffith$elm_ui$Element$row = F2(
@@ -10606,6 +10599,39 @@ var $mdgriffith$elm_ui$Element$spacing = function (x) {
 			x,
 			x));
 };
+var $author$project$Main$myrow = function (x) {
+	return A2(
+		$mdgriffith$elm_ui$Element$row,
+		_List_fromArray(
+			[
+				$mdgriffith$elm_ui$Element$spacing(50)
+			]),
+		x);
+};
+var $mdgriffith$elm_ui$Internal$Model$Empty = {$: 'Empty'};
+var $mdgriffith$elm_ui$Element$none = $mdgriffith$elm_ui$Internal$Model$Empty;
+var $mdgriffith$elm_ui$Internal$Model$PaddingStyle = F5(
+	function (a, b, c, d, e) {
+		return {$: 'PaddingStyle', a: a, b: b, c: c, d: d, e: e};
+	});
+var $mdgriffith$elm_ui$Internal$Flag$padding = $mdgriffith$elm_ui$Internal$Flag$flag(2);
+var $mdgriffith$elm_ui$Element$padding = function (x) {
+	var f = x;
+	return A2(
+		$mdgriffith$elm_ui$Internal$Model$StyleClass,
+		$mdgriffith$elm_ui$Internal$Flag$padding,
+		A5(
+			$mdgriffith$elm_ui$Internal$Model$PaddingStyle,
+			'p-' + $elm$core$String$fromInt(x),
+			f,
+			f,
+			f,
+			f));
+};
+var $mdgriffith$elm_ui$Element$rgb = F3(
+	function (r, g, b) {
+		return A4($mdgriffith$elm_ui$Internal$Model$Rgba, r, g, b, 1);
+	});
 var $author$project$Main$title = function (x) {
 	return A2(
 		$mdgriffith$elm_ui$Element$el,
@@ -10721,72 +10747,32 @@ var $author$project$Main$main = A2(
 					]),
 				$mdgriffith$elm_ui$Element$none),
 				$author$project$Main$title('2022-23'),
-				A2(
-				$mdgriffith$elm_ui$Element$row,
+				$author$project$Main$myrow(
 				_List_fromArray(
 					[
-						$mdgriffith$elm_ui$Element$spacing(50)
-					]),
-				_List_fromArray(
-					[
-						A2(
-						$mdgriffith$elm_ui$Element$column,
-						_List_fromArray(
-							[$mdgriffith$elm_ui$Element$alignTop]),
+						$author$project$Main$mycol(
 						_List_fromArray(
 							[
-								A2(
-								$mdgriffith$elm_ui$Element$el,
-								_List_fromArray(
-									[
-										$mdgriffith$elm_ui$Element$Font$size(30),
-										$mdgriffith$elm_ui$Element$centerX
-									]),
-								$mdgriffith$elm_ui$Element$text('STI2D'))
+								$author$project$Main$minititle('STI2D')
 							]))
 					])),
 				$author$project$Main$title('2021-22'),
-				A2(
-				$mdgriffith$elm_ui$Element$row,
+				$author$project$Main$myrow(
 				_List_fromArray(
 					[
-						$mdgriffith$elm_ui$Element$spacing(50)
-					]),
-				_List_fromArray(
-					[
-						A2(
-						$mdgriffith$elm_ui$Element$column,
-						_List_fromArray(
-							[$mdgriffith$elm_ui$Element$alignTop]),
+						$author$project$Main$mycol(
 						_List_fromArray(
 							[
-								A2(
-								$mdgriffith$elm_ui$Element$el,
-								_List_fromArray(
-									[
-										$mdgriffith$elm_ui$Element$Font$size(30),
-										$mdgriffith$elm_ui$Element$centerX
-									]),
-								$mdgriffith$elm_ui$Element$text('6e')),
+								$author$project$Main$minititle('6e'),
 								$author$project$Main$chap('chapitre 1'),
 								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a6eChap1),
 								$author$project$Main$chap('chapitre 2'),
 								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a6eChap2)
 							])),
-						A2(
-						$mdgriffith$elm_ui$Element$column,
-						_List_fromArray(
-							[$mdgriffith$elm_ui$Element$alignTop]),
+						$author$project$Main$mycol(
 						_List_fromArray(
 							[
-								A2(
-								$mdgriffith$elm_ui$Element$el,
-								_List_fromArray(
-									[
-										$mdgriffith$elm_ui$Element$Font$size(30),
-										$mdgriffith$elm_ui$Element$centerX
-									]),
-								$mdgriffith$elm_ui$Element$text('5e')),
+								$author$project$Main$minititle('5e'),
 								$author$project$Main$chap('chapitre 1'),
 								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a5eChap1),
 								$author$project$Main$chap('chapitre 2'),

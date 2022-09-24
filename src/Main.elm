@@ -17,47 +17,38 @@ main =
                 )
             , el [ Element.padding 10 ] none
             , title "2022-23"
-            , myrow "STI2D"
+            , myrow [
+                mycol [minititle "STI2D"]
+            ]
             , title "2021-22"
-            , Element.row [ Element.spacing 50 ]
-                [ Element.column [ Element.alignTop ]
-                    [ --  el [ Element.padding 10 ] none,
-                      el
-                        [ Element.Font.size 30
-                        , Element.centerX
-                        ]
-                        (text "6e")
+            , myrow [ mycol[
+                      minititle "6e"
                     , chap "chapitre 1"
                     , view_ref_tuple_simple a6eChap1
                     , chap "chapitre 2"
-                    , view_ref_tuple_simple a6eChap2
-                    ]
-                , Element.column [ Element.alignTop ]
-                    [ -- el [ Element.padding 10 ] none,
-                      el
-                        [ Element.Font.size 30
-                        , Element.centerX
-                        ]
-                        (text "5e")
+                    , view_ref_tuple_simple a6eChap2]
+
+                ,mycol [minititle "5e"
                     , chap "chapitre 1"
                     , view_ref_tuple_simple a5eChap1
                     , chap "chapitre 2"
-                    , view_ref_tuple_simple a5eChap2
-                    ]
-                ]
-            ]
-        )
+                    , view_ref_tuple_simple a5eChap2]
+                    ]])
 
 myrow x =
-    Element.row [ Element.spacing 50 ]
-                [ Element.column [ Element.alignTop ]
-                    [ --  el [ Element.padding 10 ] none,
-                      el
-                        [ Element.Font.size 30
-                        , Element.centerX
-                        ]
-                        (text x)
-                    ]]
+    Element.row [ Element.spacing 50 ] x
+
+mycol x = 
+    Element.column [ Element.alignTop ] x
+
+
+minititle x = 
+    el
+        [ Element.Font.size 30
+        , Element.centerX
+        ]
+        (text x)
+
 
 chap x = 
     el
