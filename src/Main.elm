@@ -13,36 +13,43 @@ main =
             [ Element.padding 20, Element.width Element.shrink ]
             [ el [ Element.Font.size 20 ]
                 (text
-                    ("Site ressource physique chimie")
+                    "Site ressource physique chimie"
                 )
             , el [ Element.padding 10 ] none
             , title "2022-23"
-            , myrow [
-                mycol [minititle "STI2D"]
-            ]
+            , myrow
+                [ mycol [ minititle "STI2D" ]
+                ]
             , title "2021-22"
-            , myrow [ mycol[
-                      minititle "6e"
+            , myrow
+                [ mycol
+                    [ minititle "6e"
                     , chap "chapitre 1"
                     , view_ref_tuple_simple a6eChap1
                     , chap "chapitre 2"
-                    , view_ref_tuple_simple a6eChap2]
-
-                ,mycol [minititle "5e"
+                    , view_ref_tuple_simple a6eChap2
+                    ]
+                , mycol
+                    [ minititle "5e"
                     , chap "chapitre 1"
                     , view_ref_tuple_simple a5eChap1
                     , chap "chapitre 2"
-                    , view_ref_tuple_simple a5eChap2]
-                    ]])
+                    , view_ref_tuple_simple a5eChap2
+                    ]
+                ]
+            ]
+        )
+
 
 myrow x =
     Element.row [ Element.spacing 50 ] x
 
-mycol x = 
+
+mycol x =
     Element.column [ Element.alignTop ] x
 
 
-minititle x = 
+minititle x =
     el
         [ Element.Font.size 30
         , Element.centerX
@@ -50,18 +57,20 @@ minititle x =
         (text x)
 
 
-chap x = 
+chap x =
     el
         [ Element.Font.size 25
         , Element.centerX
         ]
         (text x)
 
+
 title x =
     el [ Element.Font.size 40, Element.centerX ]
-                (text
-                    (x)
-                )
+        (text
+            x
+        )
+
 
 view_ref_tuple_simple : List ( String, String ) -> Element.Element msg
 view_ref_tuple_simple list =
