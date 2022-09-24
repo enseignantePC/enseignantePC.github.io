@@ -13,19 +13,21 @@ main =
         [ width fill
         , height fill
         , scrollbarY
+        , padding 1
         , Element.Background.color (Element.rgb 0.8 0.8 0.8)
         ]
         (Element.column
             [ width fill
-            , height fill
-            , Element.padding 20
-            , Element.width Element.shrink
+            , Element.padding 10
             ]
-            [ title
-                "Site ressource physique chimie"
-            , el [ Element.padding 10 ] none
-            , title "2022-23"
-            , el [ Element.padding 10 ] none
+            [ el
+                [ padding 10
+                , Font.size 48
+                , alignTop
+                , centerX
+                ]
+                (text "Site ressource physique chimie")
+            , title "2022-2023"
             , myrow
                 [ mycol
                     [ minititle "STI2D"
@@ -40,24 +42,25 @@ main =
                     , view_ref_tuple_simple a20221Genchap1
                     ]
                 ]
---            , title "2021-22"
---            , el [ Element.padding 10 ] none
---            , myrow
---                [ mycol
---                    [ minititle "6e"
---                    , chap "chapitre 1"
---                    , view_ref_tuple_simple a6eChap1
---                    , chap "chapitre 2"
---                    , view_ref_tuple_simple a6eChap2
---                    ]
---                , mycol
---                    [ minititle "5e"
---                    , chap "chapitre 1"
---                    , view_ref_tuple_simple a5eChap1
---                    , chap "chapitre 2"
---                    , view_ref_tuple_simple a5eChap2
---                    ]
---                ]
+
+            --            , title "2021-22"
+            --            , el [ Element.padding 10 ] none
+            --            , myrow
+            --                [ mycol
+            --                    [ minititle "6e"
+            --                    , chap "chapitre 1"
+            --                    , view_ref_tuple_simple a6eChap1
+            --                    , chap "chapitre 2"
+            --                    , view_ref_tuple_simple a6eChap2
+            --                    ]
+            --                , mycol
+            --                    [ minititle "5e"
+            --                    , chap "chapitre 1"
+            --                    , view_ref_tuple_simple a5eChap1
+            --                    , chap "chapitre 2"
+            --                    , view_ref_tuple_simple a5eChap2
+            --                    ]
+            --                ]
             ]
         )
 
@@ -65,7 +68,8 @@ main =
 myrow x =
     Element.row
         [ width fill
-        , height fill
+        , alignTop
+       , height fill
         , Element.spacing 60
         ]
         x
@@ -73,7 +77,7 @@ myrow x =
 
 mycol x =
     Element.column
-        [ Element.alignTop
+        [ alignTop
         , width fill
         , height fill
         , padding 5
@@ -100,6 +104,7 @@ chap x =
     el
         [ Font.size 25
         , Element.centerX
+        ,alignTop
         ]
         (text x)
 
@@ -107,10 +112,12 @@ chap x =
 title x =
     paragraph
         [ Font.size 48
+        , alignTop
         , Font.center
         , Element.centerX
         , width fill
         , height fill
+        , padding 10
         ]
         [ text
             x
