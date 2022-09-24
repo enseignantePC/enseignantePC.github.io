@@ -1,14 +1,52 @@
 module Main exposing (..)
 
 import Assets exposing (..)
+import Browser
 import Dict exposing (..)
 import Element exposing (..)
 import Element.Background
 import Element.Border as Border
+import Element.Events exposing (onClick)
 import Element.Font as Font
 
 
+type Tab
+    = First
+    | Second
+
+
+type Msg
+    = UserSelectedTab Tab
+
+
+type alias Model =
+    Tab
+
+
+update : Msg -> Model -> Model
+update (UserSelectedTab t) _ =
+    t
+
+
+main : Program () Model Msg
 main =
+    Browser.sandbox
+        { init = First
+        , view = view
+        , update = update
+        }
+
+
+view selectedTab =
+    let
+        view_now =
+            case selectedTab of
+                First ->
+                    view_cours
+
+                Second ->
+                    view_simulation
+    in
     Element.layout
         [ width fill
         , height fill
@@ -20,56 +58,100 @@ main =
             [ width fill
             , Element.padding 10
             ]
-            [ el
-                [ padding 10
-                , Font.size 48
-                , alignTop
-                , centerX
+            ([ row [ centerY ]
+                [ tabEl First selectedTab
+                , tabEl Second selectedTab
                 ]
-                (text "Site ressource physique chimie")
-            , title "2022-2023"
-            , myrow
-                [ mycol
-                    [ minititle "STI2D"
-                    , chap "chapitre 1"
-                    , view_ref_tuple_simple a20221STI2Dchap1
-                    , chap "chapitre 2"
-                    , view_ref_tuple_simple a20221STI2Dchap2
-                    ]
-                , mycol
-                    [ minititle "1GEN"
-                    , chap "chapitre 1"
-                    , view_ref_tuple_simple a20221Genchap1
-                    ]
-                ]
-
-            --            , title "2021-22"
-            --            , el [ Element.padding 10 ] none
-            --            , myrow
-            --                [ mycol
-            --                    [ minititle "6e"
-            --                    , chap "chapitre 1"
-            --                    , view_ref_tuple_simple a6eChap1
-            --                    , chap "chapitre 2"
-            --                    , view_ref_tuple_simple a6eChap2
-            --                    ]
-            --                , mycol
-            --                    [ minititle "5e"
-            --                    , chap "chapitre 1"
-            --                    , view_ref_tuple_simple a5eChap1
-            --                    , chap "chapitre 2"
-            --                    , view_ref_tuple_simple a5eChap2
-            --                    ]
-            --                ]
-            ]
+             ]
+                ++ view_now
+            )
         )
+
+
+view_simulation =
+    [ el [ padding 50 ] (text "à venir...") ]
+
+
+view_cours =
+    [ el
+        [ padding 30
+        , Font.size 48
+        , alignTop
+        , centerX
+        ]
+        (text "Documents à télécharger")
+    , myrow
+        [ mycol
+            [ minititle "STI2D"
+            , chap "chapitre 1"
+            , view_ref_tuple_simple a20221STI2Dchap1
+            , chap "chapitre 2"
+            , view_ref_tuple_simple a20221STI2Dchap2
+            ]
+        , mycol
+            [ minititle "1GEN"
+            , chap "chapitre 1"
+            , view_ref_tuple_simple a20221Genchap1
+            ]
+        ]
+    ]
+
+
+tabEl : Tab -> Tab -> Element Msg
+tabEl tab selectedTab =
+    let
+        isSelected =
+            tab == selectedTab
+
+        padOffset =
+            if isSelected then
+                0
+
+            else
+                2
+
+        borderWidths =
+            if isSelected then
+                { left = 2, top = 2, right = 2, bottom = 0 }
+
+            else
+                { bottom = 2, top = 0, left = 0, right = 0 }
+
+        corners =
+            if isSelected then
+                { topLeft = 6, topRight = 6, bottomLeft = 0, bottomRight = 0 }
+
+            else
+                { topLeft = 0, topRight = 0, bottomLeft = 0, bottomRight = 0 }
+    in
+    el
+        [ Border.widthEach borderWidths
+        , Border.roundEach corners
+        , Border.color (rgb255 0x72 0x9F 0xCF)
+        , onClick <| UserSelectedTab tab
+        ]
+    <|
+        el
+            [ centerX
+            , centerY
+            , paddingEach { left = 30, right = 30, top = 10 + padOffset, bottom = 10 - padOffset }
+            ]
+        <|
+            text <|
+                case tab of
+                    First ->
+                        "Cours"
+
+                    Second ->
+                        "Simulations"
 
 
 myrow x =
     Element.row
         [ width fill
         , alignTop
-       --, height fill
+
+        --, height fill
         , Element.spacing 60
         ]
         x
@@ -79,7 +161,8 @@ mycol x =
     Element.column
         [ alignTop
         , width fill
-      --  , height fill
+
+        --  , height fill
         , padding 5
         , spacing 5
         , Font.size 16
@@ -104,7 +187,7 @@ chap x =
     el
         [ Font.size 25
         , Element.centerX
-        ,alignTop
+        , alignTop
         ]
         (text x)
 
