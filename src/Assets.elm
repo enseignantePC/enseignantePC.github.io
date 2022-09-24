@@ -43,7 +43,7 @@ a6eChap2 =
 
 
 a20221Genchap1 =
-    [ ( "Remise à niveau", "" )
+    [ ( "Remise à niveau", "assets/2022/1ereSTi2D/activité_remise_niveau/act_remise_a_niveau.pdf" )
     , ( "activité 1", "assets/2022/1ereGen/chap1/act1.pdf" )
     , ( "activité 2", "assets/2022/1ereGen/chap1/act2.pdf" )
     , ( "Cours", "assets/2022/1ereGen/chap1/act_cours.pdf" )
@@ -51,7 +51,7 @@ a20221Genchap1 =
 
 
 a20221STI2Dchap1 =
-    [ ( "Remise à niveau", "" )
+    [ ( "Remise à niveau", "assets/2022/1ereSTi2D/activité_remise_niveau/act_remise_a_niveau.pdf" )
     , ( "Cours", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
     ]
 
