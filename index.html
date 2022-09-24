@@ -10560,11 +10560,19 @@ var $mdgriffith$elm_ui$Element$layoutWith = F3(
 	});
 var $mdgriffith$elm_ui$Element$layout = $mdgriffith$elm_ui$Element$layoutWith(
 	{options: _List_Nil});
+var $mdgriffith$elm_ui$Internal$Model$Class = F2(
+	function (a, b) {
+		return {$: 'Class', a: a, b: b};
+	});
+var $mdgriffith$elm_ui$Internal$Flag$fontAlignment = $mdgriffith$elm_ui$Internal$Flag$flag(12);
+var $mdgriffith$elm_ui$Element$Font$center = A2($mdgriffith$elm_ui$Internal$Model$Class, $mdgriffith$elm_ui$Internal$Flag$fontAlignment, $mdgriffith$elm_ui$Internal$Style$classes.textCenter);
 var $author$project$Main$minititle = function (x) {
 	return A2(
 		$mdgriffith$elm_ui$Element$el,
 		_List_fromArray(
 			[
+				$mdgriffith$elm_ui$Element$Font$size(48),
+				$mdgriffith$elm_ui$Element$Font$center,
 				$mdgriffith$elm_ui$Element$Font$size(30),
 				$mdgriffith$elm_ui$Element$centerX
 			]),
@@ -10709,10 +10717,6 @@ var $mdgriffith$elm_ui$Element$rgb = F3(
 	function (r, g, b) {
 		return A4($mdgriffith$elm_ui$Internal$Model$Rgba, r, g, b, 1);
 	});
-var $mdgriffith$elm_ui$Internal$Model$Class = F2(
-	function (a, b) {
-		return {$: 'Class', a: a, b: b};
-	});
 var $mdgriffith$elm_ui$Internal$Flag$overflow = $mdgriffith$elm_ui$Internal$Flag$flag(20);
 var $mdgriffith$elm_ui$Element$scrollbarY = A2($mdgriffith$elm_ui$Internal$Model$Class, $mdgriffith$elm_ui$Internal$Flag$overflow, $mdgriffith$elm_ui$Internal$Style$classes.scrollbarsY);
 var $mdgriffith$elm_ui$Internal$Model$Describe = function (a) {
@@ -10742,7 +10746,8 @@ var $author$project$Main$title = function (x) {
 		$mdgriffith$elm_ui$Element$paragraph,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$Font$size(40),
+				$mdgriffith$elm_ui$Element$Font$size(48),
+				$mdgriffith$elm_ui$Element$Font$center,
 				$mdgriffith$elm_ui$Element$centerX,
 				$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill),
 				$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$fill)
@@ -10842,13 +10847,7 @@ var $author$project$Main$main = A2(
 			]),
 		_List_fromArray(
 			[
-				A2(
-				$mdgriffith$elm_ui$Element$el,
-				_List_fromArray(
-					[
-						$mdgriffith$elm_ui$Element$Font$size(20)
-					]),
-				$mdgriffith$elm_ui$Element$text('Site ressource physique chimie')),
+				$author$project$Main$title('Site ressource physique chimie'),
 				A2(
 				$mdgriffith$elm_ui$Element$el,
 				_List_fromArray(
@@ -10857,6 +10856,13 @@ var $author$project$Main$main = A2(
 					]),
 				$mdgriffith$elm_ui$Element$none),
 				$author$project$Main$title('2022-23'),
+				A2(
+				$mdgriffith$elm_ui$Element$el,
+				_List_fromArray(
+					[
+						$mdgriffith$elm_ui$Element$padding(10)
+					]),
+				$mdgriffith$elm_ui$Element$none),
 				$author$project$Main$myrow(
 				_List_fromArray(
 					[
@@ -10878,6 +10884,13 @@ var $author$project$Main$main = A2(
 							]))
 					])),
 				$author$project$Main$title('2021-22'),
+				A2(
+				$mdgriffith$elm_ui$Element$el,
+				_List_fromArray(
+					[
+						$mdgriffith$elm_ui$Element$padding(10)
+					]),
+				$mdgriffith$elm_ui$Element$none),
 				$author$project$Main$myrow(
 				_List_fromArray(
 					[

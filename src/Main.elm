@@ -21,12 +21,11 @@ main =
             , Element.padding 20
             , Element.width Element.shrink
             ]
-            [ el [ Font.size 20 ]
-                (text
-                    "Site ressource physique chimie"
-                )
+            [ title
+                "Site ressource physique chimie"
             , el [ Element.padding 10 ] none
             , title "2022-23"
+            , el [ Element.padding 10 ] none
             , myrow
                 [ mycol
                     [ minititle "STI2D"
@@ -42,6 +41,7 @@ main =
                     ]
                 ]
             , title "2021-22"
+            , el [ Element.padding 10 ] none
             , myrow
                 [ mycol
                     [ minititle "6e"
@@ -88,7 +88,9 @@ mycol x =
 
 minititle x =
     el
-        [ Font.size 30
+        [ Font.size 48
+        , Font.center
+        , Font.size 30
         , Element.centerX
         ]
         (text x)
@@ -103,7 +105,13 @@ chap x =
 
 
 title x =
-    paragraph [ Font.size 40, Element.centerX, width fill, height fill ]
+    paragraph
+        [ Font.size 48
+        , Font.center
+        , Element.centerX
+        , width fill
+        , height fill
+        ]
         [ text
             x
         ]
