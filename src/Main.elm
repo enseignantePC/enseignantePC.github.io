@@ -2,16 +2,26 @@ module Main exposing (..)
 
 import Assets exposing (..)
 import Dict exposing (..)
-import Element exposing (download, el, link, none, text)
+import Element exposing (..)
 import Element.Background
-import Element.Font
+import Element.Border as Border
+import Element.Font as Font
 
 
 main =
-    Element.layout [ Element.Background.color (Element.rgb 0.8 0.8 0.8) ]
+    Element.layout
+        [ width fill
+        , height fill
+        , scrollbarY
+        , Element.Background.color (Element.rgb 0.8 0.8 0.8)
+        ]
         (Element.column
-            [ Element.padding 20, Element.width Element.shrink ]
-            [ el [ Element.Font.size 20 ]
+            [ width fill
+            , height fill
+            , Element.padding 20
+            , Element.width Element.shrink
+            ]
+            [ el [ Font.size 20 ]
                 (text
                     "Site ressource physique chimie"
                 )
@@ -53,16 +63,32 @@ main =
 
 
 myrow x =
-    Element.row [ Element.spacing 50 ] x
+    Element.row
+        [ width fill
+        , height fill
+        , Element.spacing 60
+        ]
+        x
 
 
 mycol x =
-    Element.column [ Element.alignTop ] x
+    Element.column
+        [ Element.alignTop
+        , width fill
+        , height fill
+        , padding 5
+        , spacing 5
+        , Font.size 16
+        , Border.width 2
+        , Border.rounded 6
+        , Border.color (rgb255 0x72 0x9F 0xCF)
+        ]
+        x
 
 
 minititle x =
     el
-        [ Element.Font.size 30
+        [ Font.size 30
         , Element.centerX
         ]
         (text x)
@@ -70,27 +96,27 @@ minititle x =
 
 chap x =
     el
-        [ Element.Font.size 25
+        [ Font.size 25
         , Element.centerX
         ]
         (text x)
 
 
 title x =
-    el [ Element.Font.size 40, Element.centerX ]
-        (text
+    paragraph [ Font.size 40, Element.centerX, width fill, height fill ]
+        [ text
             x
-        )
+        ]
 
 
 view_ref_tuple_simple : List ( String, String ) -> Element.Element msg
 view_ref_tuple_simple list =
-    List.map tuple_to_link list |> Element.column [ Element.padding 10 ]
+    List.map tuple_to_link list |> mycol
 
 
 tuple_to_link : ( String, String ) -> Element.Element msg
 tuple_to_link tuple =
-    download [ Element.Font.color (Element.rgb 0.1 0.1 1) ]
+    download [ Font.color (Element.rgb 0.1 0.1 1) ]
         { url = Tuple.second tuple
         , label = text (Tuple.first tuple)
         }
