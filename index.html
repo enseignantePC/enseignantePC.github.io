@@ -4455,12 +4455,23 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
-var $author$project$Assets$a20221Gen = _List_fromArray(
+var $author$project$Assets$a20221Genchap1 = _List_fromArray(
 	[
 		_Utils_Tuple2('Remise à niveau', 'assets/2022/1ereSTi2D/chap1/act_cours.pdf'),
 		_Utils_Tuple2('activité 1', 'assets/2022/1ereGen/chap1/act1.pdf'),
 		_Utils_Tuple2('activité 2', 'assets/2022/1ereGen/chap1/act2.pdf'),
 		_Utils_Tuple2('Cours', 'assets/2022/1ereGen/chap1/act_cours.pdf')
+	]);
+var $author$project$Assets$a20221STI2Dchap1 = _List_fromArray(
+	[
+		_Utils_Tuple2('Remise à niveau', 'assets/2022/1ereSTi2D/chap1/act_cours.pdf'),
+		_Utils_Tuple2('Cours', 'assets/2022/1ereSTi2D/chap1/act_cours.pdf'),
+		_Utils_Tuple2('act1', 'assets/2022/1ereSTi2D/chap2/act1/act1.pdf')
+	]);
+var $author$project$Assets$a20221STI2Dchap2 = _List_fromArray(
+	[
+		_Utils_Tuple2('méthodes', 'assets/2022/1ereSTi2D/chap2/act1_methodes.pdf'),
+		_Utils_Tuple2('Cours', 'assets/2022/1ereSTi2D/chap2/act_cours.pdf')
 	]);
 var $author$project$Assets$a5eChap1 = _List_fromArray(
 	[
@@ -10760,14 +10771,18 @@ var $author$project$Main$main = A2(
 						$author$project$Main$mycol(
 						_List_fromArray(
 							[
-								$author$project$Main$minititle('STI2D')
+								$author$project$Main$minititle('STI2D'),
+								$author$project$Main$chap('chapitre 1'),
+								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221STI2Dchap1),
+								$author$project$Main$chap('chapitre 2'),
+								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221STI2Dchap2)
 							])),
 						$author$project$Main$mycol(
 						_List_fromArray(
 							[
 								$author$project$Main$minititle('1GEN'),
 								$author$project$Main$chap('chapitre 1'),
-								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221Gen)
+								$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221Genchap1)
 							]))
 					])),
 				$author$project$Main$title('2021-22'),

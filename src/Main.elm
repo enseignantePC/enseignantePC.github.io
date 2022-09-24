@@ -18,8 +18,13 @@ main =
             , el [ Element.padding 10 ] none
             , title "2022-23"
             , myrow
-                [ mycol [ minititle "STI2D" 
-                , chap "chapitre 1"]
+                [ mycol
+                    [ minititle "STI2D"
+                    , chap "chapitre 1"
+                    , view_ref_tuple_simple a20221STI2Dchap1
+                    , chap "chapitre 2"
+                    , view_ref_tuple_simple a20221STI2Dchap2
+                    ]
                 , mycol
                     [ minititle "1GEN"
                     , chap "chapitre 1"
