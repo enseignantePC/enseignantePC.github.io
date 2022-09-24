@@ -43,10 +43,10 @@ a6eChap2 =
 
 
 a20221Gen =
-    [ ( "", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act_cours.pdf" )
+    [ ( "Remise à niveau", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
+    , ( "activité 1", "assets/2022/1ereGen/chap1/act1.pdf" )
+    , ( "activité 2", "assets/2022/1ereGen/chap1/act2.pdf" )
+    , ( "Cours", "assets/2022/1ereGen/chap1/act_cours.pdf" )
     ]
 
 
