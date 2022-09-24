@@ -53,13 +53,13 @@ a20221Genchap1 =
 a20221STI2Dchap1 =
     [ ( "Remise à niveau", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
     , ( "Cours", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
-    , ( "act1", "assets/2022/1ereSTi2D/chap2/act1/act1.pdf" )
     ]
 
 
 a20221STI2Dchap2 =
     [ ( "méthodes", "assets/2022/1ereSTi2D/chap2/act1_methodes.pdf" )
     , ( "Cours", "assets/2022/1ereSTi2D/chap2/act_cours.pdf" )
+    , ( "act1", "assets/2022/1ereSTi2D/chap2/act1/act1.pdf" )
     ]
 
 
