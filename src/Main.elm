@@ -79,7 +79,7 @@ mycol x =
     Element.column
         [ alignTop
         , width fill
-        , height fill
+      --  , height fill
         , padding 5
         , spacing 5
         , Font.size 16
