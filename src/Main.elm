@@ -69,7 +69,7 @@ myrow x =
     Element.row
         [ width fill
         , alignTop
-       , height fill
+       --, height fill
         , Element.spacing 60
         ]
         x
