@@ -1,6 +1,6 @@
 module Main exposing (..)
 
-import Assets exposing (a5eChap1, a5eChap2, a6eChap1, a6eChap2)
+import Assets exposing (a5eChap1, a5eChap2, a6eChap1, a6eChap2, a20221Gen)
 import Dict exposing (..)
 import Element exposing (download, el, link, none, text)
 import Element.Background
@@ -19,6 +19,7 @@ main =
             , title "2022-23"
             , myrow
                 [ mycol [ minititle "STI2D" ]
+                , mycol [ minititle "1GEN",chap "chapitre 1", view_ref_tuple_simple a20221Gen]
                 ]
             , title "2021-22"
             , myrow
