@@ -40,11 +40,15 @@ a6eChap1 =
 a6eChap2 =
     [ ( "activité 1 ", "./assets/6e/chapitre2_La_Matiere/activités/activité1/act1.pdf" )
     ]
+a20221Gen =     [ ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
+    , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )
+    , ( "", "assets/2022/1ereGen/chap1/act_cours.pdf" )
+]
+
 
 
 big_list =
-    [ ( "", "./assets/5e/bonus/Fiche d_exercice grandeurs et unités.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
+    [ ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
     , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )
     , ( "", "assets/2022/1ereGen/chap1/act_cours.pdf" )
     , ( "", "assets/2022/1ereSTi2D/activité_remise_niveau/act_remise_a_niveau.pdf" )
