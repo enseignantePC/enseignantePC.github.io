@@ -11622,15 +11622,76 @@ var $author$project$Main$view_cours = _List_fromArray(
 					]))
 			]))
 	]);
+var $elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
+var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
+var $mdgriffith$elm_ui$Element$newTabLink = F2(
+	function (attrs, _v0) {
+		var url = _v0.url;
+		var label = _v0.label;
+		return A4(
+			$mdgriffith$elm_ui$Internal$Model$element,
+			$mdgriffith$elm_ui$Internal$Model$asEl,
+			$mdgriffith$elm_ui$Internal$Model$NodeName('a'),
+			A2(
+				$elm$core$List$cons,
+				$mdgriffith$elm_ui$Internal$Model$Attr(
+					$elm$html$Html$Attributes$href(url)),
+				A2(
+					$elm$core$List$cons,
+					$mdgriffith$elm_ui$Internal$Model$Attr(
+						$elm$html$Html$Attributes$rel('noopener noreferrer')),
+					A2(
+						$elm$core$List$cons,
+						$mdgriffith$elm_ui$Internal$Model$Attr(
+							$elm$html$Html$Attributes$target('_blank')),
+						A2(
+							$elm$core$List$cons,
+							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$shrink),
+							A2(
+								$elm$core$List$cons,
+								$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$shrink),
+								A2(
+									$elm$core$List$cons,
+									$mdgriffith$elm_ui$Internal$Model$htmlClass($mdgriffith$elm_ui$Internal$Style$classes.contentCenterX + (' ' + ($mdgriffith$elm_ui$Internal$Style$classes.contentCenterY + (' ' + $mdgriffith$elm_ui$Internal$Style$classes.link)))),
+									attrs)))))),
+			$mdgriffith$elm_ui$Internal$Model$Unkeyed(
+				_List_fromArray(
+					[label])));
+	});
+var $author$project$Main$godotlink = F2(
+	function (url, label) {
+		return A2(
+			$mdgriffith$elm_ui$Element$newTabLink,
+			_List_fromArray(
+				[
+					$mdgriffith$elm_ui$Element$padding(15),
+					$mdgriffith$elm_ui$Element$Font$color(
+					A3($mdgriffith$elm_ui$Element$rgb, 0.1, 0.1, 1)),
+					$mdgriffith$elm_ui$Element$Border$width(2),
+					$mdgriffith$elm_ui$Element$Border$rounded(6),
+					$mdgriffith$elm_ui$Element$Border$color(
+					A3($mdgriffith$elm_ui$Element$rgb255, 255, 0, 0))
+				]),
+			{
+				label: $mdgriffith$elm_ui$Element$text(label),
+				url: url
+			});
+	});
 var $author$project$Main$view_simulation = _List_fromArray(
 	[
 		A2(
 		$mdgriffith$elm_ui$Element$el,
 		_List_fromArray(
 			[
-				$mdgriffith$elm_ui$Element$padding(50)
+				$mdgriffith$elm_ui$Element$padding(30),
+				$mdgriffith$elm_ui$Element$Font$size(48),
+				$mdgriffith$elm_ui$Element$alignTop,
+				$mdgriffith$elm_ui$Element$centerX
 			]),
-		$mdgriffith$elm_ui$Element$text('à venir...'))
+		$mdgriffith$elm_ui$Element$text('Documents à télécharger')),
+		A2($author$project$Main$godotlink, 'assets/godot/composition_air/godot.html', 'Composition de l\'air'),
+		A2($author$project$Main$godotlink, 'assets/godot/equilibre_equation/godot.html', 'Équilibre équation'),
+		A2($author$project$Main$godotlink, 'assets/godot/univers/godot.html', 'Univers')
 	]);
 var $author$project$Main$view = function (selectedTab) {
 	var view_now = function () {

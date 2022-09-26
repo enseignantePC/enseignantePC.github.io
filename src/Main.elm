@@ -69,7 +69,17 @@ view selectedTab =
 
 
 view_simulation =
-    [ el [ padding 50 ] (text "à venir...") ]
+    [ el
+        [ padding 30
+        , Font.size 48
+        , alignTop
+        , centerX
+        ]
+        (text "Documents à télécharger")
+    , godotlink "assets/godot/composition_air/godot.html" "Composition de l'air"
+    , godotlink "assets/godot/equilibre_equation/godot.html" "Équilibre équation"
+    , godotlink "assets/godot/univers/godot.html" "Univers"
+    ]
 
 
 view_cours =
@@ -214,7 +224,24 @@ view_ref_tuple_simple list =
 
 tuple_to_link : ( String, String ) -> Element.Element msg
 tuple_to_link tuple =
-    download [ Font.color (Element.rgb 0.1 0.1 1) ]
+    download [ Font.color (rgb 0.1 0.1 1) ]
         { url = Tuple.second tuple
         , label = text (Tuple.first tuple)
+        }
+
+
+godotlink : String -> String -> Element.Element msg
+godotlink url label =
+    newTabLink
+        [ padding 15
+        , Font.color <| rgb 0.1 0.1 1
+        , Border.width 2
+        , Border.rounded 6
+        , Border.color (rgb255 255 0 0)
+
+        -- , Element.Background.color <| rgb255 50 50 50
+        ]
+        { url = url
+        , label =
+            text label
         }
