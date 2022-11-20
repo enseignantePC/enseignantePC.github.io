@@ -94,14 +94,18 @@ view_cours =
         [ mycol
             [ minititle "STI2D"
             , chap "chapitre 1"
-            , view_ref_tuple_simple a20221STI2Dchap1
+            , view_ref_tuple_simple a2022_1STI2Dchap1
             , chap "chapitre 2"
-            , view_ref_tuple_simple a20221STI2Dchap2
+            , view_ref_tuple_simple a2022_1STI2Dchap2
+            , chap "chapitre 3"
+            , view_ref_tuple_simple a2022_1STI2Dchap3
             ]
         , mycol
             [ minititle "1GEN"
             , chap "chapitre 1"
-            , view_ref_tuple_simple a20221Genchap1
+            , view_ref_tuple_simple a2022_1Genchap1
+            , chap "chapitre 2"
+            , view_ref_tuple_simple a2022_1Genchap2
             ]
         ]
     ]

@@ -11412,23 +11412,41 @@ var $author$project$Main$tabEl = F2(
 						}
 					}())));
 	});
-var $author$project$Assets$a20221Genchap1 = _List_fromArray(
+var $author$project$Assets$a2022_1Genchap1 = _List_fromArray(
 	[
 		_Utils_Tuple2('Remise à niveau', 'assets/2022/1ereSTi2D/activité_remise_niveau/act_remise_a_niveau.pdf'),
 		_Utils_Tuple2('activité 1', 'assets/2022/1ereGen/chap1/act1.pdf'),
 		_Utils_Tuple2('activité 2', 'assets/2022/1ereGen/chap1/act2.pdf'),
-		_Utils_Tuple2('Cours', 'assets/2022/1ereGen/chap1/act_cours.pdf')
+		_Utils_Tuple2('Cours', 'assets/2022/1ereGen/chap1/act_cours.pdf'),
+		_Utils_Tuple2('DM', 'assets/2022/1ereGen/chap1/act_DM1.pdf')
 	]);
-var $author$project$Assets$a20221STI2Dchap1 = _List_fromArray(
+var $author$project$Assets$a2022_1Genchap2 = _List_fromArray(
+	[
+		_Utils_Tuple2('Cours', 'assets/2022/1ereGen/chap2/act_cours.pdf'),
+		_Utils_Tuple2('act1', 'assets/2022/1ereGen/chap2/act1.pdf'),
+		_Utils_Tuple2('act2', 'assets/2022/1ereGen/chap2/act2.pdf'),
+		_Utils_Tuple2('act3', 'assets/2022/1ereGen/chap2/act3.pdf')
+	]);
+var $author$project$Assets$a2022_1STI2Dchap1 = _List_fromArray(
 	[
 		_Utils_Tuple2('Remise à niveau', 'assets/2022/1ereSTi2D/activité_remise_niveau/act_remise_a_niveau.pdf'),
 		_Utils_Tuple2('Cours', 'assets/2022/1ereSTi2D/chap1/act_cours.pdf')
 	]);
-var $author$project$Assets$a20221STI2Dchap2 = _List_fromArray(
+var $author$project$Assets$a2022_1STI2Dchap2 = _List_fromArray(
 	[
 		_Utils_Tuple2('méthodes', 'assets/2022/1ereSTi2D/chap2/act1_methodes.pdf'),
 		_Utils_Tuple2('Cours', 'assets/2022/1ereSTi2D/chap2/act_cours.pdf'),
 		_Utils_Tuple2('act1', 'assets/2022/1ereSTi2D/chap2/act1/act1.pdf')
+	]);
+var $author$project$Assets$a2022_1STI2Dchap3 = _List_fromArray(
+	[
+		_Utils_Tuple2('Tout', 'assets/2022/1ereSTi2D/chap3/chap3.pdf'),
+		_Utils_Tuple2('Cours', 'assets/2022/1ereSTi2D/chap3/0_courselec/act_cours.pdf'),
+		_Utils_Tuple2('act1', 'assets/2022/1ereSTi2D/chap3/act1_energie/act1.pdf'),
+		_Utils_Tuple2('act2', 'assets/2022/1ereSTi2D/chap3/act2_kwh/act2.pdf'),
+		_Utils_Tuple2('act3', 'assets/2022/1ereSTi2D/chap3/act_exp1_chaine_energie/act_exp_1.pdf'),
+		_Utils_Tuple2('act4', 'assets/2022/1ereSTi2D/chap3/act_exp2_rendement/act3.pdf'),
+		_Utils_Tuple2('Exercice', 'assets/2022/1ereSTi2D/chap3/act_z_exercices/act_z_exercice.pdf')
 	]);
 var $mdgriffith$elm_ui$Internal$Model$Top = {$: 'Top'};
 var $mdgriffith$elm_ui$Element$alignTop = $mdgriffith$elm_ui$Internal$Model$AlignY($mdgriffith$elm_ui$Internal$Model$Top);
@@ -11609,16 +11627,20 @@ var $author$project$Main$view_cours = _List_fromArray(
 					[
 						$author$project$Main$minititle('STI2D'),
 						$author$project$Main$chap('chapitre 1'),
-						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221STI2Dchap1),
+						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a2022_1STI2Dchap1),
 						$author$project$Main$chap('chapitre 2'),
-						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221STI2Dchap2)
+						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a2022_1STI2Dchap2),
+						$author$project$Main$chap('chapitre 3'),
+						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a2022_1STI2Dchap3)
 					])),
 				$author$project$Main$mycol(
 				_List_fromArray(
 					[
 						$author$project$Main$minititle('1GEN'),
 						$author$project$Main$chap('chapitre 1'),
-						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a20221Genchap1)
+						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a2022_1Genchap1),
+						$author$project$Main$chap('chapitre 2'),
+						$author$project$Main$view_ref_tuple_simple($author$project$Assets$a2022_1Genchap2)
 					]))
 			]))
 	]);
