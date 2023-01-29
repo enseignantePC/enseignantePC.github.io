@@ -75,6 +75,21 @@ a2022_1STI2Dchap3 =
     ]
 
 
+a2022_1STI2Dchap4 =
+    [ ( "Cours", "assets/2022/1ereSTi2D/chap4/act0_cours.pdf" )
+    , ( "Exercice", "assets/2022/1ereSTi2D/chap4/act_ex.pdf" )
+    , ( "act1", "assets/2022/1ereSTi2D/chap4/act1.pdf" )
+    , ( "act2", "assets/2022/1ereSTi2D/chap4/act2.pdf" )
+    ]
+
+
+a2022_1STI2Dchap5 =
+    [ ( "Cours", "assets/2022/1ereSTi2D/chap5/act0cours.pdf" )
+    , ( "Exercice", "assets/2022/1ereSTi2D/chap5/act9ex.pdf" )
+    , ( "act1", "assets/2022/1ereSTi2D/chap5/act1.pdf" )
+    ]
+
+
 big_list =
     [ ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
     , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )

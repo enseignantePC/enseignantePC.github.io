@@ -99,6 +99,10 @@ view_cours =
             , view_ref_tuple_simple a2022_1STI2Dchap2
             , chap "chapitre 3"
             , view_ref_tuple_simple a2022_1STI2Dchap3
+            , chap "chapitre 4"
+            , view_ref_tuple_simple a2022_1STI2Dchap4
+            , chap "chapitre 5"
+            , view_ref_tuple_simple a2022_1STI2Dchap5
             ]
         , mycol
             [ minititle "1GEN"
