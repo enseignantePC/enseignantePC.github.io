@@ -44,10 +44,23 @@ a2022_1Genchap1 =
 
 
 a2022_1Genchap2 =
-    [ ( "Cours", "assets/2022/1ereGen/chap2/act_cours.pdf" )
+    [ ( "Cours", "assets/2022/1ereGen/chap2/act0_cours.pdf" )
     , ( "act1", "assets/2022/1ereGen/chap2/act1.pdf" )
     , ( "act2", "assets/2022/1ereGen/chap2/act2.pdf" )
     , ( "act3", "assets/2022/1ereGen/chap2/act3.pdf" )
+    , ( "exercices", "assets/2022/1ereGen/chap2/act_exercices.pdf" )
+    , ( "chapitre entier", "assets/2022/1ereGen/chap2/final.pdf" )
+    ]
+
+
+a2022_1Genchap3 =
+    [ ( "Chapitre Entier", "assets/2022/1ereGen/chap3/final.pdf" )
+    , ( "Cours", "assets/2022/1ereGen/chap3/act0cours.pdf" )
+    , ( "act1", "assets/2022/1ereGen/chap3/act1.pdf" )
+    , ( "act2", "assets/2022/1ereGen/chap3/act2.pdf" )
+    , ( "act3", "assets/2022/1ereGen/chap3/act3.pdf" )
+    , ( "act4", "assets/2022/1ereGen/chap3/act4.pdf" )
+    , ( "Exercices", "assets/2022/1ereGen/chap3/act_exercices.pdf" )
     ]
 
 

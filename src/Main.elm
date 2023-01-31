@@ -110,6 +110,8 @@ view_cours =
             , view_ref_tuple_simple a2022_1Genchap1
             , chap "chapitre 2"
             , view_ref_tuple_simple a2022_1Genchap2
+            , chap "chapitre 3"
+            , view_ref_tuple_simple a2022_1Genchap3
             ]
         ]
     ]
