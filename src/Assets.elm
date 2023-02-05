@@ -97,35 +97,11 @@ a2022_1STI2Dchap4 =
 
 
 a2022_1STI2Dchap5 =
-    [ ( "Cours", "assets/2022/1ereSTi2D/chap5/act0cours.pdf" )
+    [ ( "Tout le chapitre", "assets/2022/1ereSTi2D/chap5/final.pdf" )
+    , ( "Cours", "assets/2022/1ereSTi2D/chap5/act0cours.pdf" )
     , ( "Exercice", "assets/2022/1ereSTi2D/chap5/act9ex.pdf" )
     , ( "act1", "assets/2022/1ereSTi2D/chap5/act1.pdf" )
-    ]
-
-
-big_list =
-    [ ( "", "assets/2022/1ereGen/chap1/act1.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act2.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act_cours.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/act_DM1.pdf" )
-    , ( "", "assets/2022/1ereGen/chap1/chap.pdf" )
-    , ( "", "assets/2022/1ereGen/chap2/act1.pdf" )
-    , ( "", "assets/2022/1ereGen/chap2/act2.pdf" )
-    , ( "", "assets/2022/1ereGen/chap2/act3.pdf" )
-    , ( "", "assets/2022/1ereGen/chap2/act_cours.pdf" )
-
-    --
-    , ( "", "assets/2022/1ereSTi2D/chap1/act_cours.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap2/act1/act1.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap2/act1/methode/méthode.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap2/act1/méthode.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap2/act1_methodes.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap2/act_cours.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/0_courselec/act_cours.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/act1_energie/act1.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/act2_kwh/act2.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/act_exp1_chaine_energie/act_exp_1.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/act_exp2_rendement/act3.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/act_z_exercices/act_z_exercice.pdf" )
-    , ( "", "assets/2022/1ereSTi2D/chap3/chap3.pdf" )
+    , ( "act2", "assets/2022/1ereSTi2D/chap5/act2.pdf" )
+    , ( "act3", "assets/2022/1ereSTi2D/chap5/act3.pdf" )
+    , ( "act4", "assets/2022/1ereSTi2D/chap5/act4.pdf" )
     ]
