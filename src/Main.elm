@@ -79,6 +79,7 @@ view_simulation =
     , godotlink "assets/godot/composition_air/godot.html" "Composition de l'air"
     , godotlink "assets/godot/equilibre_equation/godot.html" "Équilibre équation"
     , godotlink "assets/godot/univers/godot.html" "Univers"
+    , godotlink "assets/godot/tactical/tacticalRPG_v_01.html" "Easter (en développement)"
     ]
 
 
