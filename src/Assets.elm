@@ -105,3 +105,10 @@ a2022_1STI2Dchap5 =
     , ( "act3", "assets/2022/1ereSTi2D/chap5/act3.pdf" )
     , ( "act4", "assets/2022/1ereSTi2D/chap5/act4.pdf" )
     ]
+    
+   
+a2022_1STI2Dchap6 =
+    [ ( "Cours", "assets/cours.pdf" )
+    ,( "Exercice", "assets/ex.pdf" )
+    ,( "Activité", "assets/act1.pdf" )
+    ]
